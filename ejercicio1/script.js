@@ -17,22 +17,22 @@ function par_25() {
 }
 
 function emp_term() {
-var palabra = prompt('Inserta una palabra').toLocaleLowerCase();
-var arr = (palabra.split("")); 
-var empieza = arr[0];
-var termina = arr[arr.length -1];
-const letra = "a";
-switch (true) {
-    case (empieza === letra && termina === letra):
-        alert("Tu palabra empieza y termina por a");
-        break;
-    case (empieza === letra && termina !== letra):
-        alert("Tu palabra empieza por a");
-        break;
-    case (empieza !== letra && termina === letra):
-        alert("Tu palabra termina por a");
-        break;
-    default: alert("Tu palabra no empieza ni termina por a");
-        break;
-}
+    var palabra = prompt('Inserta una palabra').toLowerCase();
+    var arr = (palabra.split(""));
+    var empieza = arr[0];
+    var termina = arr[arr.length - 1];
+    const letra = "a";
+    switch (true) {
+        case (empieza === letra && termina === letra):
+            alert("Tu palabra empieza y termina por a");
+            break;
+        case (empieza === letra && termina !== letra):
+            alert("Tu palabra empieza por a");
+            break;
+        case (empieza !== letra && termina === letra):
+            alert("Tu palabra termina por a");
+            break;
+        default: alert("Tu palabra no empieza ni termina por a");
+            break;
+    }
 }
